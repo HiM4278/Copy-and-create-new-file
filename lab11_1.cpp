@@ -14,37 +14,41 @@ int main(){
 		if (grade == 'A')
 			{
 			 count[0] += 1;
+			 i++;
 			}
 		else if (grade == 'B')
 			{
 			 count[1] += 1;
+			 i++;
 			}
 		else if (grade == 'C')
 			{
 			 count[2] += 1;
+			 i++;
 			}
 		else if (grade == 'D')
 			{
 			 count[3] += 1;
+			 i++;
 			}
 		else if (grade == 'F')
 			{
 			 count[4] += 1;
+			 i++;
 			} 
 		else if ( grade == '0')	
 			{
 			  break;
 			}
 			else {
-			 cout << "Wrong input. Please input again.";
+			 cout << "Wrong input. Please input again."<< '\n';
 			}
-		i++;
 	} while (true);
 	
 	
 	
 	
-	cout << "In total ? students.";
+	cout << "In total " << i-1 <<" students."<< endl;
 	cout << "A = " << count[0] <<", ";
 	cout << "B = " << count[1] <<", ";	
 	cout << "C = " << count[2] <<", ";
