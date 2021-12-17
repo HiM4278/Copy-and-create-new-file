@@ -6,15 +6,15 @@ using namespace std;
 int main (){
 	ifstream source;
 	ofstream dest;
-	source.open("cheerbook.txt") ;
+	source.open("cheerbook.txt");
 	dest.open("cheerbook_copy.txt");
 	string text;
-	cout << "-------------------- BOOM ---------------------" << '\n';
+	dest << "-------------------- BOOM ---------------------" << '\n';
 	while (getline(source,text))
 	{
-		cout << text << '\n';
+		dest << text << '\n';
 	}
-	cout << "-------------------- HA!! ---------------------" << '\n';
+	dest << "-------------------- HA!! ---------------------" << '\n';
 
     source.close();
     dest.close();
